@@ -31,7 +31,7 @@ The following datasets are used to evaluate our framework. Dataset resources and
 Download the following ImageNet-21k pretrained backbones and place them
 in the `checkpoint/` directory. Save the files using the filenames listed below.
 
-| Backbone | Download | Local Filename |
+| Backbone | Download | 
 | --- | --- | --- |
 | ViT-B/16 | [Download](https://storage.googleapis.com/vit_models/imagenet21k/ViT-B_16.npz) |
 | ViT-L/16 | [Download](https://storage.googleapis.com/vit_models/imagenet21k/ViT-L_16.npz) | 
