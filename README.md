@@ -29,13 +29,13 @@ The following datasets are used to evaluate our framework. Dataset resources and
 ## Pretrained ViT
 
 Download the following ImageNet-21k pretrained backbones and place them
-in the `checkpoint/` directory. Save the files using the filenames listed below.
+in the `checkpoint/` directory.
 
-| Backbone | Download | 
-| --- | --- | --- |
+| Backbone | Download |
+| --- | --- |
 | ViT-B/16 | [Download](https://storage.googleapis.com/vit_models/imagenet21k/ViT-B_16.npz) |
-| ViT-L/16 | [Download](https://storage.googleapis.com/vit_models/imagenet21k/ViT-L_16.npz) | 
-| ViT-S/16 (AugReg) | [Download](https://storage.googleapis.com/vit_models/augreg/S_16-i21k-300ep-lr_0.001-aug_light1-wd_0.03-do_0.0-sd_0.0.npz) | 
+| ViT-L/16 | [Download](https://storage.googleapis.com/vit_models/imagenet21k/ViT-L_16.npz) |
+| ViT-S/16 | [Download](https://storage.googleapis.com/vit_models/augreg/S_16-i21k-300ep-lr_0.001-aug_light1-wd_0.03-do_0.0-sd_0.0.npz) |
 
 These checkpoints initialize the ViT backbones. Trained CT-OBCR model
 checkpoints will be released separately.
