@@ -40,6 +40,16 @@ in the `checkpoint/` directory.
 These checkpoints initialize the ViT backbones. Trained CT-OBCR model
 checkpoints will be released separately.
 
+## Pretrained Models
+
+Download the pretrained model files from Baidu Netdisk:
+
+- **Download:** [Baidu Netdisk](https://pan.baidu.com/s/1i8xIdziKM2r-8RGD_AESNw?pwd=1ecg)
+- **Extraction Code:** `1ecg`
+
+After downloading and extracting the files, place the model files
+in the `checkpoint/` directory.
+
 ## Code and Model Availability
 
 The source code and trained model weights will be publicly released
