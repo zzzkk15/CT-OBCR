@@ -1,4 +1,4 @@
-<img width="1730" height="904" alt="image" src="https://github.com/user-attachments/assets/e6e2d104-df65-41a6-9b47-2436367352d0" /># CT-OBCR
+# CT-OBCR
 
 Project repository for:
 
