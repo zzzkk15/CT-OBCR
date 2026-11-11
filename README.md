@@ -1,4 +1,4 @@
-# CT-OBCR
+<img width="1730" height="904" alt="image" src="https://github.com/user-attachments/assets/e6e2d104-df65-41a6-9b47-2436367352d0" /># CT-OBCR
 
 Project repository for:
 
@@ -30,3 +30,12 @@ in this repository.
 
 Installation instructions, model download links, and evaluation commands
 will be provided with the release.
+
+## Acknowledgments
+
+This work builds upon **TVT** and **FFTAT**. We sincerely thank the authors
+for sharing their code, which provided valuable references for the
+implementation of our framework.
+
+- [TVT](https://github.com/uta-smile/TVT)
+- [FFTAT](https://github.com/Shawey94/WACV2025-FFTAT)
