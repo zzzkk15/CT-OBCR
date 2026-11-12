@@ -103,12 +103,6 @@ For CPU evaluation:
 python test.py --checkpoint checkpoint/final.pt --test-list data/scan_test.txt --data-root . --device cpu --output-dir results_cpu
 ```
 
-The script displays cumulative accuracy during evaluation and saves the following files in the selected output directory:
-
-- `accuracy.txt`: final accuracy, correct/total counts, and evaluation settings.
-- `predictions.csv`: ground-truth labels, predicted classes, and confidence scores.
-
-The evaluation batch size is read from the checkpoint. Preserve the supplied test-list order and saved batch size when comparing results, because predictions can depend on batch composition. Use a new output directory for each evaluation.
 
 ## Code and Model Availability
 
