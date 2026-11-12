@@ -94,13 +94,13 @@ For GPU testing, use a compatible CUDA-enabled PyTorch installation. The same in
 Run the following command from the repository root to evaluate on GPU:
 
 ```bash
-python test.py --checkpoint checkpoint/final.pt --test-list data/scan_test.txt --data-root . --device cuda --output-dir results_gpu
+python test.py --checkpoint checkpoint/final.pt --data-root . --device cuda --output-dir results_gpu
 ```
 
 For CPU evaluation:
 
 ```bash
-python test.py --checkpoint checkpoint/final.pt --test-list data/scan_test.txt --data-root . --device cpu --output-dir results_cpu
+python test.py --checkpoint checkpoint/final.pt --data-root . --device cpu --output-dir results_cpu
 ```
 
 
