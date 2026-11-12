@@ -1,0 +1,5 @@
+torch
+numpy
+Pillow
+PyWavelets
+typing_extensions
