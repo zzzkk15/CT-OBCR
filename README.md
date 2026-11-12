@@ -48,14 +48,71 @@ Download the pretrained model files from Baidu Netdisk:
 After downloading and extracting the files, place the model files
 in the `checkpoint/` directory.
 
+## Testing
+
+### 1. Prepare the dataset
+
+Download Oracle-241 using the dataset resources listed above and extract the images into the `data/` directory.
+
+```text
+CT-OBCR/
+├── data/
+├── checkpoint/
+├── models/
+├── inference_runtime.py
+├── requirements.txt
+└── test.py
+```
+
+
+### 2. Download the trained model
+
+Download the trained CT-OBCR checkpoint from [Baidu Netdisk](https://pan.baidu.com/s/1i8xIdziKM2r-8RGD_AESNw?pwd=1ecg).
+
+Extraction code: `1ecg`
+
+After extraction, place `final.pt` at:
+
+```text
+checkpoint/final.pt
+```
+
+The ImageNet-21k weights listed under “Pretrained ViT” are used for training initialization and are not required for testing with `final.pt`.
+
+### 3. Install dependencies
+
+Run the following command from the repository root:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+For GPU testing, use a compatible CUDA-enabled PyTorch installation. The same installation can also execute on CPU.
+
+### 4. Run evaluation
+
+Run the following command from the repository root to evaluate on GPU:
+
+```bash
+python test.py --checkpoint checkpoint/final.pt --test-list data/scan_test.txt --data-root . --device cuda --output-dir results_gpu
+```
+
+For CPU evaluation:
+
+```bash
+python test.py --checkpoint checkpoint/final.pt --test-list data/scan_test.txt --data-root . --device cpu --output-dir results_cpu
+```
+
+The script displays cumulative accuracy during evaluation and saves the following files in the selected output directory:
+
+- `accuracy.txt`: final accuracy, correct/total counts, and evaluation settings.
+- `predictions.csv`: ground-truth labels, predicted classes, and confidence scores.
+
+The evaluation batch size is read from the checkpoint. Preserve the supplied test-list order and saved batch size when comparing results, because predictions can depend on batch composition. Use a new output directory for each evaluation.
+
 ## Code and Model Availability
 
-The source code and trained model weights will be publicly released
-in this repository.
-
-Installation instructions, model download links, and evaluation commands
-will be provided with the release.
-
+This repository provides the testing scripts and compiled core model modules required for inference and evaluation. The trained model checkpoint is available through the Baidu Netdisk link above.
 ## Acknowledgments
 
 This work builds upon **TVT** and **FFTAT**. We sincerely thank the authors
